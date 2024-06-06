@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 主轴上居中对齐 */
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* 修改为垂直方向排列 */
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center; /* 文字居中显示 */
+}
+.spacer {
+  flex: 1; /* 占据剩余空间，将清空按钮推到右侧 */
+}
+.clear-btn {
+  font-size: 16px;
+  color: #080808;
+  background-color: #ffffff;
+  border: 1px solid #030303;
+  border-radius: 8rpx;
+  padding: 4px 12px;
+  margin-top: 20px;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+}
+
+.history-btn {
+  font-size: 18px;
+}
+
+.back-btn {
+  position: absolute;
+  left: 20px;
+  top: 26px;
+}
+
+.back-text {
+  font-size: 18px;
+}
+
+.history-list {
+  width: 100%; /* 确保历史列表占满父容器宽度 */
+  padding: 10px;
+}
+
+.history-item {
+  width: 100%; /* 确保历史记录项占满父容器宽度 */
+  margin-top: 40rpx;
+  padding: 0 32rpx;
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  box-shadow: 0px 0px 2rpx #0000000a, 0px 0px 4rpx #0000000f, 0px 8rpx 16rpx #0000000a;
+}
+
+.item-content {
+  width: 100%; /* 确保内容占满历史记录项宽度 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.languages {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.language {
+  font-weight: bold;
+}
+
+.input-text {
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.translated-text {
+  margin-top: 4px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(3, 3, 3);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  color: #000000;
+  font-size: 16px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}

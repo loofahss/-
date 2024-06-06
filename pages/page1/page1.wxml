@@ -1,0 +1,56 @@
+<!-- index.wxml -->
+
+<view class="container">
+
+<!-- 大标题 -->
+<view class="title">文本翻译</view>
+
+<!-- 输入框 -->
+<view class="input-container">
+  <textarea class="input" placeholder="请输入要翻译的文本" bindinput="inputText"></textarea>
+  <button class="translate-btn" bindtap="translate">翻译</button>
+</view>
+
+<!-- 翻译结果输出框 -->
+<view class="output-container">
+  <textarea class="output" placeholder="{{ outputPlaceholder }}" disabled="true">{{ translatedText }}</textarea>
+</view>
+
+<!-- 下拉框和复制按钮容器 -->
+<view class="button-container">
+  <!-- 复制按钮 -->
+  <view class="copy-container">
+    <button class="copy-btn" bindtap="copyTranslatedText">复制</button>
+  </view>
+
+  <!-- 收藏按钮 -->
+  <view class="favorite-container">
+    <button class="favorite-btn" bindtap="addToFavorites">收藏</button>
+  </view>
+</view>
+
+<!-- 语言选择 -->
+<view class="select-container">
+  <!-- 源语言选择 -->
+  <view class="language-selection">
+    <text class="label">源语言：</text>
+    <picker class="picker" mode="selector" range="{{ sourceLanguages }}" bindchange="selectSourceLanguage">
+      <view class="picker-view">
+        <text class="selected">{{ selectedSourceLanguage }}</text>
+      </view>
+    </picker>
+    <text class="selected-language">{{ selectedSourceLanguage }}</text>
+  </view>
+
+  <!-- 目标语言选择 -->
+  <view class="language-selection">
+    <text class="label">目标语言：</text>
+    <picker class="picker" mode="selector" range="{{ targetLanguages }}" bindchange="selectTargetLanguage">
+      <view class="picker-view">
+        <text class="selected">{{ selectedTargetLanguage }}</text>
+      </view>
+    </picker>
+    <text class="selected-language">{{ selectedTargetLanguage }}</text>
+  </view>
+</view>
+</view>

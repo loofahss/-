@@ -1,0 +1,152 @@
+.container {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  justify-content: flex-start;  
+  height: 100vh;  
+}  
+ 
+.title {  
+  font-size: 24px;  
+  font-weight: bold;  
+  margin-top: 20px;  
+}  
+/* 添加这个类给停止录音按钮 */  
+.stop-record-btn {  
+  margin-bottom: 0px; /* 根据需要调整这个值，以确保有足够的空间 */  
+}  
+ 
+/* 调整输入框的上外边距，使其紧贴停止录音按钮下方 */  
+.input-container {  
+  width: 300px;  
+  /* 将上外边距设置为0或与.stop-record-btn的margin-bottom相匹配的值 */  
+  margin-top: 0;  
+}  
+ 
+.input {  
+  border: 1px solid #ccc;  
+  border-radius: 5px;  
+  width: 300px;   
+  height: 300px;  
+  padding: 10px;  
+}  
+ 
+.translate-btn {  
+  margin-top: 20px;  
+}  
+ 
+.result {  
+  margin-top: 20px;  
+}  
+ 
+.translated-text {  
+  font-size: 16px;  
+}  
+ 
+.output-container {  
+  width: 300px;  
+  margin-top: 20px;  
+}  
+ 
+.output {  
+  width: 100%;  
+  height: 200px;  
+  padding: 10px;  
+  border: 1px solid #ccc;  
+  border-radius: 5px;  
+}  
+ 
+
+/* 下拉框和复制按钮容器样式 */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px; /* 根据需要调整宽度 */
+  margin-top: -7px;
+}
+
+/* 复制按钮容器样式 */
+.copy-container {
+  margin-top: 20px;
+}
+
+/* 复制按钮样式 */
+.copy-btn {
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* 收藏按钮容器样式 */
+.favorite-container {
+  margin-top: 20px;
+}
+
+/* 收藏按钮样式 */
+.favorite-btn {
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+ 
+.select-container {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  width: 300px; /* 调整宽度以适应内容 */  
+  margin-top: 20px;  
+}  
+ 
+.language-selection {  
+  position: relative;  
+  flex: 1;  
+}  
+ 
+.picker {  
+  position: absolute;  
+  left: 0;  
+  top: 0;  
+  width: 100%;  
+  height: 100%;  
+  opacity: 0;  
+  z-index: 1;  
+}  
+ 
+.picker-view {  
+  width: 200px;  
+  height: 40px;  
+  border: 1px solid #ccc;  
+  border-radius: 5px;  
+  display: flex;  
+  align-items: center;  
+  padding: 0 10px;  
+}  
+ 
+.selected {  
+  font-size: 14px;  
+}  
+ 
+.favorite-container {  
+  margin-left: 20px;  
+  margin-right: 20px;  
+}  
+.back-btn {  
+  position: absolute;  
+  left: 20px;  
+  top: 26px;  
+}  
+ 
+.back-text {  
+  font-size: 18px;  
+}
+.record-status {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: rgb(15, 12, 12);
+}

@@ -1,0 +1,32 @@
+<view class="container">
+  <!-- 大标题和清空按钮 -->
+  <view class="title-container">
+    <view class="title">收藏夹</view>
+    <view class="spacer"></view>
+  </view>
+
+  <view class="favorites-list">
+    <block wx:for="{{favorites}}" wx:key="index">
+      <view class="favorite-item">
+        <view class="item-content">
+          <view class="languages">
+            <text class="language">{{item.sourceLanguage}}</text>
+            <text> -> </text>
+            <text class="language">{{item.targetLanguage}}</text>
+          </view>
+          <view class="input-text">{{item.inputText}}</view>
+          <view class="translated-text">{{item.translatedText}}</view>
+          <!-- 删除按钮 -->
+          <button class="delete-btn" data-index="{{index}}" bindtap="deleteFavorite">删除</button>
+        </view>
+      </view>
+      <!-- 分割线 -->
+      <view class="divider"></view>
+    </block>
+  </view>
+
+  <!-- 收藏夹按钮改为清空历史记录按钮 -->
+  <view class="footer">
+    <button class="history-btn" bindtap="clearHistory">清空收藏夹</button>
+  </view>
+</view>

@@ -1,0 +1,128 @@
+/* index.wxss */
+
+/* 容器样式 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+/* 大标题样式 */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* 输入框容器样式 */
+.input-container {
+  margin-top: 20px;
+}
+
+/* 输入框样式 */
+.input {
+  width: 300px; 
+  height: 200px;
+  padding: 10px;
+}
+
+/* 翻译按钮样式 */
+.translate-btn {
+  margin-top: 20px;
+}
+
+/* 翻译结果容器样式 */
+.output-container {
+  width: 300px;
+  margin-top: 20px;
+}
+
+/* 翻译结果输出框样式 */
+.output {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 下拉框和复制按钮容器样式 */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px; /* 根据需要调整宽度 */
+  margin-top: -7px;
+}
+
+/* 复制按钮容器样式 */
+.copy-container {
+  margin-top: 20px;
+}
+
+/* 复制按钮样式 */
+.copy-btn {
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* 收藏按钮容器样式 */
+.favorite-container {
+  margin-top: 20px;
+}
+
+/* 收藏按钮样式 */
+.favorite-btn {
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* 语言选择容器样式 */
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px; /* 调整宽度以适应内容 */
+  margin-top: 20px;
+}
+
+/* 语言选择样式 */
+.language-selection {
+  position: relative;
+  flex: 1;
+}
+
+/* 下拉框样式 */
+.picker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* 下拉框选项样式 */
+.picker-view {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* 已选择选项样式 */
+.selected {
+  font-size: 14px;
+}

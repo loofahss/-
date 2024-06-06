@@ -1,0 +1,19 @@
+<!-- index.wxml -->
+
+<view class="container">
+  <!-- 历史记录和收藏按钮 -->
+  <view class="toolbar">
+    <button class="toolbar-btn history-btn" bindtap="showHistory">历史记录</button>
+    <button class="toolbar-btn favorite-btn" bindtap="showFavorites">收藏</button>
+  </view>
+
+  <!-- 大标题 -->
+  <view class="title">翻译 King</view>
+
+  <!-- 三个按钮 -->
+  <view class="options">
+    <button class="option-btn text-translate" bindtap="textTranslate">文本翻译</button>
+    <button class="option-btn speech-translate" bindtap="speechTranslate">语音翻译</button>
+    <button class="option-btn image-translate" bindtap="imageTranslate">图片翻译</button>
+  </view>
+</view>
